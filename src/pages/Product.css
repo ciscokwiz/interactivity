@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Merriweather+Sans:wght@700&family=Montserrat:wght@300&display=swap');
+
+
+.product-nav{
+    padding: 1rem 2rem;
+}
+.product-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5rem 4rem;
+    flex-wrap: wrap;
+    
+    
+}
+.heading{
+    margin: 2rem 5rem;
+    text-align: center;
+    font-family: "Belleza";
+    font-size: 1.5rem;
+}
