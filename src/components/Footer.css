@@ -3,7 +3,7 @@
 
 .footer-container{
     padding-top: 1rem;
-    margin: 1rem 2rem;
+    margin: .5rem 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -34,12 +34,12 @@
 }
 a{
     text-decoration: none;
-    color: #48c9f0;
+    color: rgb(39, 39, 255);
     line-height: 2.5rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 h2{
-    color: rgb(232, 232, 232);
+    color: black;
     line-height: 4.5rem;
     font-size: 1.4rem;
     font-weight: 600;
@@ -47,11 +47,13 @@ h2{
 .trademark{
     margin: 1rem 2rem;
     align-items: center;
+    color: black;
 
 }
 .trademark i{
-    color: rgb(211, 211, 211);
+    color: black;
     font-size: small;
+
 }
 .r-footer{
     display: flex;
@@ -75,21 +77,21 @@ h2{
     margin-right: 2rem;
 
 }
-.community h2{
-    color: rgb(232, 232, 232);
+.community .connect-text h2{
+    color: rgb(59, 59, 59);
     line-height: 2rem;
     font-size: 1.4rem;
     font-weight: 600;
 }
-.community h4{
-    color: rgb(232, 232, 232);
+.community .connect-text h4{
+    color: rgb(59, 59, 59);
     line-height: 2rem;
     font-size: 1.05rem;
     font-weight: 600;
 }
-.community h3{
-    color: rgb(232, 232, 232);
-    line-height: 1.5rem;
+.community .connect-icons h3{
+    color: rgb(59, 59, 59);
+    line-height: 3rem;
     font-size: 1.15rem;
     font-weight: 600;
 }
@@ -113,20 +115,16 @@ h2{
     color: #48c9f0;
 
 }
-.connect-icons h3{
-    line-height: 3rem;
-    color: azure;
 
-}
 
-.icons a{
+.icons i a{
     font-size: x-large;
-    color: rgb(246, 246, 246);
+    color: rgb(59, 59, 59);
     margin-right: 2rem;
     
 }
 .rules a{
-    font-size: 1rem;
+    font-size: .9rem;
     margin-right: 1rem;
 
 }
