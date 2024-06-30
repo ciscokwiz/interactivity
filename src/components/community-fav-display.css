@@ -8,12 +8,12 @@
 .product-display .product-card img{
     width: 120px;
     height: auto;
-    filter: drop-shadow(0 50px 20px #0009);
+    filter: drop-shadow(0 20px 5px rgba(83, 83, 83, 0.6));
     margin: 5px 20px;
+    border-radius: 5%;
 
 }
 .product-display .product-card{
-    background-color: rgb(255, 255, 255);
     padding: 1rem 1rem;
     border-radius: 5%;
     text-align: center;
