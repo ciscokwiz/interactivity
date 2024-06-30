@@ -1,12 +1,12 @@
 import './Main.css'
-import { HiShoppingBag } from "react-icons/hi2";
-import product1 from '../asset/bubblegum.png';
-import product2 from '../asset/canary.png';
-import product3 from '../asset/Curious.png';
-import product4 from '../asset/Old Mauve.png';
+
 import vid1 from '../asset/bluegirl1.mp4';
 import Navbar from '../components/NavBar';
 import Footer from '../components/Footer';
+import contents from './community-fav';
+import {ProductDisplay} from '../components/community-fav-display';
+
+
 
 
 
@@ -21,7 +21,13 @@ function pages (){
                 <div className="hero">
                     <h1 className='hero-text'>Hair<span>Shades</span>.co</h1>
                     <h3 className='hero-tagline'>Embrace vibrant colors with pure organic hair dyes</h3>
-                    <button className='shop-button'>Shop<i><HiShoppingBag /></i></button>
+                    <button className='shop-button'>Shop
+                        <i>
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M14 7h-4v3a1 1 0 0 1-2 0V7H6a1 1 0 0 0-.997.923l-.917 11.924A2 2 0 0 0 6.08 22h11.84a2 2 0 0 0 1.994-2.153l-.917-11.924A1 1 0 0 0 18 7h-2v3a1 1 0 1 1-2 0V7Zm-2-3a2 2 0 0 0-2 2v1H8V6a4 4 0 0 1 8 0v1h-2V6a2 2 0 0 0-2-2Z" clip-rule="evenodd"/>
+                            </svg>
+                        </i>
+                    </button>
                 </div>
             </section>
             <section className='latest-product-section'>
@@ -29,38 +35,22 @@ function pages (){
                     <h1>Community Faves</h1>
                     <h3>Shop our latest product line & everyone's favourites </h3>
                     <div className="product-cards">
-                        <div className="product-card">
-                            <img className='product-image' src={product1} alt="product1" />
-                            <h3>Bubble gum (Hotpink)</h3>
-                            <p>$3.99</p>
-                            <button className='card-button'>Add to Bag</button>
-                        </div>
-                        <div className="product-card">
-                            <img className='product-image' src={product2} alt="product1" />
-                            <h3>Canary (Gold)</h3>
-                            <p>$3.99</p>
-                            <button className='card-button'>Add to Bag</button>
-                        </div>
-                        <div className="product-card">
-                            <img className='product-image' src={product4} alt="product1" />
-                            <h3>Old Mauve (Weird purple)</h3>
-                            <p>$3.99</p>
-                            <button className='card-button'>Add to Bag</button>
-                        </div>
-                        <div className="product-card">
-                            <img className='product-image' src={product3} alt="product1" />
-                            <h3>Curious (Deep blue)</h3>
-                            <p>$3.99</p>
-                            <button className='card-button'>Add to Bag</button>
-                        </div>
+                        {contents.map(contents => (
+                            <ProductDisplay
+                                key= {contents.id}
+                                name={contents.name}
+                                image={contents.image}
+                                price={contents.price}
+                            />
+                        ))}                        
                     </div>
                 </div>
             </section>
             <section className='discover-section'>
                 <div className="discover">
                     <h1>Discover HairShades.co</h1>
-                    <h2>Discover a new way to express yourself with our diverse range of shades, all lovingly created to ensure a rich, beautiful finish that respects your hair’s natural vitality. </h2>
-                    <h3> Embrace the beauty of nature and shine inside out with our organic hair dyes. Join us on this journey to a more radiant, confident you.</h3>
+                    <h2>Discover a new way to express yourself with our diverse range of shades, all lovinly created to ensure a rich, beautiful finish that respects your hair’s natural vitality. </h2>
+                    <h2> Embrace the beauty of nature and shine inside out with our organic hair dyes. Join us on this journey to a more radiant, confident you.</h2>
                     <div className="discover-video">
                         <video src={vid1} autoPlay loop muted />
                         <a href='about'>Discover HairShades.co</a>
@@ -75,3 +65,5 @@ function pages (){
 }
 
 export default pages;
+
+
