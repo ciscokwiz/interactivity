@@ -49,12 +49,28 @@ function pages (){
             <section className='discover-section'>
                 <div className="discover">
                     <h1>Discover HairShades.co</h1>
-                    <h2>Discover a new way to express yourself with our diverse range of shades, all lovinly created to ensure a rich, beautiful finish that respects your hair’s natural vitality. </h2>
+                    <h2>Discover a new way to express yourself with our diverse range of shades, all created to ensure a rich, beautiful finish that respects your hair’s natural vitality. </h2>
                     <h2> Embrace the beauty of nature and shine inside out with our organic hair dyes. Join us on this journey to a more radiant, confident you.</h2>
                     <div className="discover-video">
                         <video src={vid1} autoPlay loop muted />
                         <a href='about'>Discover HairShades.co</a>
                     </div>
+                </div>
+            </section>
+            <section className="scroll-effect">
+                <div className="wrapper">
+                        <div className='item item1'>L`oreal</div>
+                        <div className="item item2">Fenty</div>
+                        <div className='item item3'>Sephora</div>
+                        <div className='item item4'>Forever 21</div>
+                        <div className='item item5'>Grime</div>
+                </div>
+                <div className="wrapper2">
+                        <div className='items item6'>Gucci</div>
+                        <div className='items item7'>Balmain</div>
+                        <div className='items item8'>Balenciaga</div>
+                        <div className='items item9'>Under Amour</div>
+                        <div className='items item10'>Nike</div>
                 </div>
             </section>
             <footer className="footer">

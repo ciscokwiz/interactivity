@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Belleza&family=Merriweather+Sans:wght@700&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .HairShades{
     height: 100vh;
@@ -37,7 +38,7 @@
     color: transparent;
 }
 .hero-text span:hover{
-    background-image: linear-gradient(45deg, rgb(248, 248, 250) 10%, rgb(245, 241, 244) 45%, rgb(249, 247, 246) 80%);
+    background-image: linear-gradient(45deg, rgb(37, 37, 221) 10%, rgb(239, 54, 230) 45%, rgb(235, 127, 27) 80%);
     background-clip: text;
     color: transparent;
 }
@@ -129,6 +130,7 @@
     margin-top: 2rem;
     font-weight: 500;
     color: rgb(59, 59, 59);
+    margin-bottom: 5rem;
 
 }
 .discover h2{
@@ -136,7 +138,7 @@
     margin: 3.5rem 0;
     line-height: .01rem;
     font-weight: 300;
-    letter-spacing: .7px;
+    letter-spacing: .4px;
     color: rgb(59, 59, 59);
 
 }
@@ -175,4 +177,105 @@ video{
     border: transparent;
     color: #48c9f0;
 
+}
+
+.scroll-effect{
+    margin: 2.5rem 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* 
+    scroll
+*/
+
+.wrapper{
+    border: transparent;
+    margin-inline: auto;
+    position: relative;
+    height: 60px;
+    margin-top: 3rem;
+    overflow: hidden;
+}
+.item{
+    height: 55px;
+    width: 280px;
+    color: rgb(59, 59, 59);
+    font-size: 25px;
+    text-align: center;
+    place-content: center;
+    letter-spacing: 3px;
+    font-weight: 700;
+    border-radius: 10px;
+    position: absolute;
+    left: max(calc(280px * 5), 100%);
+    animation: scrollLeft 45s infinite linear;
+}
+@keyframes scrollLeft {
+    to{
+        left: -200px;
+    }
+}
+.item1{
+    animation-delay: calc(45s/5 * (5 - 1) * -1);
+}
+.item2{
+    animation-delay: calc(45s/5 * (5 - 2) * -1);
+}
+.item3{
+    animation-delay: calc(45s/5 * (5 - 3) * -1);
+}
+.item4{
+    animation-delay: calc(45s/5 * (5 - 4) * -1);
+}
+.item5{
+    animation-delay: calc(45s/5 * (5 - 5) * -1);
+}
+
+
+/* 
+    scroll 2
+*/
+
+.wrapper2{
+    border: transparent;
+    margin-inline: auto;
+    position: relative;
+    height: 60px;
+    margin-top: 3rem;
+    overflow: hidden;
+
+    
+}
+.items{
+    height: 55px;
+    width: 280px;
+    font-size: 25px;
+    text-align: center;
+    place-content: center;
+    letter-spacing: 3px;
+    font-weight: 700;
+    border-radius: 10px;
+    position: absolute;
+    right: max(calc(280px * 5), 100%);
+    animation: scrollRight 40s infinite linear;
+}
+@keyframes scrollRight {
+    to{
+        right: -200px;
+    }
+}
+.item6{
+    animation-delay: calc(40s/5 * (5 - 1) * -1);
+}
+.item7{
+    animation-delay: calc(40s/5 * (5 - 2) * -1);
+}
+.item8{
+    animation-delay: calc(40s/5 * (5 - 3) * -1);
+}
+.item9{
+    animation-delay: calc(40s/5 * (5 - 4) * -1);
+}
+.item10{
+    animation-delay: calc(40s/5 * (5 - 5) * -1);
 }
