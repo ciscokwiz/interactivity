@@ -12,7 +12,7 @@ function footer(){
             <div className="l-footer">
                 <div className="footer-list">
                     <div className="shop">
-                        <h2>Shop HairShades</h2>
+                        <h2>Shop Shades</h2>
                         <a href="">Special Offers</a>
                         <a href="">Wholesale & Bulk</a>
                         <a href="">Bundle Deals</a>
@@ -25,7 +25,7 @@ function footer(){
                         <a href="">Sourcing</a>
                     </div>
                     <div className="more">
-                        <h2>More from HairShades </h2>
+                        <h2>More from Shades </h2>
                         <a href="about">Our Story</a>
                         <a href=""> Blog</a>
                         <a href="">Contact Us</a>
