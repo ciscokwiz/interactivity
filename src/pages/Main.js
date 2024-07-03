@@ -1,5 +1,4 @@
 import './Main.css'
-
 import vid1 from '../asset/bluegirl1.mp4';
 import Navbar from '../components/NavBar';
 import Footer from '../components/Footer';
